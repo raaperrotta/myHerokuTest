@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import requests
-import os
+
 from .models import Greeting
+
+from 
 
 # Create your views here.
 def index(request):
-    times = int(os.environ.get('TIMES',3))
-    return HttpResponse('Hello! '*times)
+    return HttpResponse("Hi, Colleen!")
 
 def db(request):
 
