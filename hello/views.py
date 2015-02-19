@@ -11,6 +11,9 @@ def index(request):
 def home(request):
     return render(request, 'StarterBootstrap.html')
 
+def carousel(request):
+    return render(request, 'carousel.html')
+
 def db(request):
 
     greeting = Greeting()
