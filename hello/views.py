@@ -8,8 +8,8 @@ def index(request):
     #return HttpResponse('<b>Hello, World!</b>')
     return render(request, 'cover.html')
 
-def home(request):
-    my_col_range = range(0,18)
+def home(request, numcols = 18):
+    my_col_range = range(0, numcols)
     return render(request, 'StarterBootstrap.html', {'home_col_text': "Hello, Django!", 'my_col_range': my_col_range})
 
 def carousel(request):
