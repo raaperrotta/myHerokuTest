@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'cover.html')
 
 def home(request):
-    my_col_range = range(0,6)
+    my_col_range = range(0,18)
     return render(request, 'StarterBootstrap.html', {'home_col_text': "Hello, Django!", 'my_col_range': my_col_range})
 
 def carousel(request):
