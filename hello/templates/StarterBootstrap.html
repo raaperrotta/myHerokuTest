@@ -57,8 +57,13 @@
             <p>Lorem ipsum dolor sit amet</p>
           </div>
           <div class="col-sm-6" style="background-color:blue;">
-            <p>Ut enum ad minim</p>
+            <p>{{ home_col_text }}</p>
           </div>
+        </div>
+        <div class="row">
+          {% for ii in my_col_range %}
+            <div class="col-sm-2"><p>Column {{ii}}!</p></div>
+          {% endfor %}
         </div>
       </div>
 
