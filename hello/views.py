@@ -8,7 +8,9 @@ def index(request):
     #return HttpResponse('<b>Hello, World!</b>')
     return render(request, 'cover.html')
 
-def home(request, numcols = 18):
+def home(request, numcols = None):
+    if numcols is None:
+        numcols = 18
     my_col_range = range(0, int(numcols))
     return render(request, 'StarterBootstrap.html', {'home_col_text': "Hola, Django!", 'my_col_range': my_col_range})
 
